@@ -1,0 +1,11 @@
+﻿<UserControl x:Class="ListaLigada.ElementoArvore"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="34" Width="34" Name="elArvore">
+    <Grid>
+        <Image Source="{Binding ElementName=elArvore, Path=Imagem, Mode=TwoWay}" />
+        <ContentPresenter TextElement.FontSize="14" TextElement.FontWeight="Bold"
+               HorizontalAlignment="Center" VerticalAlignment="Center"
+               Content="{Binding ElementName=elArvore, Path=Conteudo, Mode=TwoWay}"/>
+    </Grid>
+</UserControl>

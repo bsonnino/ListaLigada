@@ -1,0 +1,82 @@
+﻿<Window x:Class="ListaLigada.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Estruturas de Dados" Width="636" SizeToContent="Height" Background="LightGray">
+    <StackPanel Name="mainPanel">
+        <Expander Header="Lista" VerticalContentAlignment="Top">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35" />
+                    <RowDefinition />
+                    <RowDefinition Height="60" />
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="5" Text="Item" VerticalAlignment="Center"/>
+                    <TextBox Name="textBox1" Margin="5" Width="200" />
+                    <Button Name="btnInsere" Content="Insere" Width="75" Margin="5" Click="btnInsere_Click" />
+                    <Button Name="btnRemove" Content="Remove" Width="75" Margin="5" Click="btnRemove_Click" />
+                    <Button Name="btnPesquisa" Content="Pesquisa" Width="75" Margin="5" Click="btnPesquisa_Click" />
+                    <Button Name="btnLimpa" Content="Limpa" Width="75" Margin="5" Click="btnLimpa_Click" />
+                </StackPanel>
+                <Canvas Name="canvas1" Grid.Row="2" Margin="5" Height="50" Background="#EEEEEE"/>
+            </Grid>
+        </Expander>
+        <Expander Header="Pilha" VerticalContentAlignment="Top">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35" />
+                    <RowDefinition />
+                    <RowDefinition Height="260" />
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="5" Text="Item" VerticalAlignment="Center"/>
+                    <TextBox Name="textBox2" Margin="5" Width="200" />
+                    <Button Name="btnPush" Content="Push" Width="75" Margin="5" Click="btnPush_Click" />
+                    <Button Name="btnPop" Content="Pop" Width="75" Margin="5" Click="btnPop_Click" />
+                    <Button Name="btnPeek" Content="Peek" Width="75" Margin="5" Click="btnPeek_Click" />
+                    <Button Name="btnLimpaPilha" Content="Limpa" Width="75" Margin="5" Click="btnLimpaPilha_Click" />
+                </StackPanel>
+                <Canvas Name="canvas2" Grid.Row="2" Margin="5" Height="250" Background="#EEEEEE"/>
+            </Grid>
+        </Expander>
+        <Expander Header="Fila" VerticalContentAlignment="Top">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35" />
+                    <RowDefinition />
+                    <RowDefinition Height="60" />
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="5" Text="Item" VerticalAlignment="Center"/>
+                    <TextBox Name="textBox3" Margin="5" Width="200" />
+                    <Button Name="btnEnqueue" Content="Enqueue" Width="75" Margin="5" Click="btnEnqueue_Click" />
+                    <Button Name="btnDequeue" Content="Dequeue" Width="75" Margin="5" Click="btnDequeue_Click" />
+                    <Button Name="btnLimpaFila" Content="Limpa" Width="75" Margin="5" Click="btnLimpaFila_Click" />
+                </StackPanel>
+                <Canvas Name="canvas3" Grid.Row="2" Margin="5" Height="50" Background="#EEEEEE"/>
+            </Grid>
+        </Expander>
+        <Expander Header="Árvore" VerticalContentAlignment="Top">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35" />
+                    <RowDefinition />
+                    <RowDefinition Height="300" />
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="5" Text="Item" VerticalAlignment="Center"/>
+                    <TextBox Name="textBox4" Margin="5" Width="200" />
+                    <Button Name="btnAdiciona" Content="Adiciona" Width="75" Margin="5" Click="btnAdiciona_Click" />
+                    <Button Name="btnDeleta" Content="Remove" Width="75" Margin="5" Click="btnDeleta_Click" />
+                    <Button Name="btnProcura" Content="Procura" Width="75" Margin="5" Click="btnProcura_Click" />
+                    <Button Name="btnLimpaArvore" Content="Limpa" Width="75" Margin="5" Click="btnLimpaArvore_Click" />
+                </StackPanel>
+                <Canvas Name="canvas4" Grid.Row="2" Margin="5" Height="300" Background="#EEEEEE"/>
+            </Grid>
+        </Expander>
+        <StatusBar HorizontalAlignment="Right" Background="Transparent">
+            <TextBlock Margin="0,0,5,0" Background="Transparent" Text="Copyright 2008 Bruno Sonnino" FontStyle="Italic" FontSize="10" />
+        </StatusBar>
+            
+    </StackPanel>
+</Window>
